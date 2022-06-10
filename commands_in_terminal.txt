@@ -1,0 +1,51 @@
+Good commands to know
+
+
+1. GENERAL COMMANDS 
+------------------------------------------------------------------------------
+
+cd <directPath> 
+==> Change directory to a certain path/folder, etc 
+
+ls 
+==> list all of the files and folders inside of the current directory
+
+touch 
+==> create a new file inside of a directory
+==> e.g. touch hello.html will create a .html-file named hello in the current directory we are located inside of
+
+open
+==> open a file for example 
+==> e.g. open hello.html will open the html file in the web browser 
+------------------------------------------------------------------------------
+
+
+
+
+2. CSS/SCSS (SASS) related
+------------------------------------------------------------------------------
+
+sass name.scss:name.css 
+==> compile the .scss file and generate a .css file
+==> needs to be done in order for the web browser to handle .scss files, since it can not by default compile .scss
+==> remember to link the .css-file in HTML, NOT the .scss-file (won´t work otherwise)
+
+
+sass watch name.scss:name.css
+==> add a watch to the .scss-file and make the .css-file update accordingly
+==> is used instead of having to recompile the .scss-file and having to create a new .css-file every time
+------------------------------------------------------------------------------
+
+
+
+
+3. GIT-related
+------------------------------------------------------------------------------
+
+git clone <url>
+==> clone a repository by its url
+==> a local copy of the repo will be created 
+==> url can either be https or ssh, which are accessed through the GitHub repo
+==> https/ssh are essentially two different ways of authentication
+
+
