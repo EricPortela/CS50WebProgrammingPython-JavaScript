@@ -1,0 +1,11 @@
+CSS selectors 
+
+
+
+* Multiple elements: a,b
+* Descendant selctor: a b  
+* Child selector: a>b
+* Adjacent sibling selector: a+b
+* Attribute selector: [a=b]
+* Pseudoclass selector: a:b
+* Pseudoelement selector: a::b
