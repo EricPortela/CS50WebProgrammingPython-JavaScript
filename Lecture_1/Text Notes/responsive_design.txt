@@ -1,0 +1,17 @@
+
+
+Responsive Design 
+-------------------------------
+* viewport 
+    -> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* Media Queries
+* Flexbox
+* Grids
+
+
+==> BOOTSTRAP is a very powerful library/tool when creating a responsive website
+* https://getbootstrap.com 
+
+
+
+
