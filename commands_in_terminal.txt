@@ -31,7 +31,7 @@ sass name.scss:name.css
 ==> remember to link the .css-file in HTML, NOT the .scss-file (won´t work otherwise)
 
 
-sass watch name.scss:name.css
+sass --watch name.scss:name.css
 ==> add a watch to the .scss-file and make the .css-file update accordingly
 ==> is used instead of having to recompile the .scss-file and having to create a new .css-file every time
 ------------------------------------------------------------------------------
