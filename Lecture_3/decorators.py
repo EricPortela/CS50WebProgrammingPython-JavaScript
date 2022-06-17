@@ -11,7 +11,8 @@ def announce(f):
 
 
 #We add the decorator the the function "hello"
-#In other words: We "wrap" the announce function around the hello-function
+#In other words: We "wrap" the announce decorator around the hello-function
+#A decorator can come in handy in a web application and in those cases you'd like to check those functions that you'd want to be run only when a user is logged in.
 @announce
 def hello():
     print("Hello world")
