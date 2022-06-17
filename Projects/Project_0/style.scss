@@ -1,0 +1,221 @@
+// SCSS FOR SEARCH + IMAGE SEARCH 
+
+%reusable_flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%links_section {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    a {
+        margin: 10px;
+    }
+}
+
+%button_layout {
+    height: 30px;
+    margin: 10px;
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+#links_section {
+   @extend %links_section
+}
+
+.search_section {
+    // border: solid red 2px;
+
+    @extend %reusable_flexbox;
+    flex-direction: column;
+    height: 60vh;
+
+    #google_logo_1 {
+        // border: solid red 2px;
+        font-size: 80px;
+        margin: 10px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .search_form {
+        // border: solid red 2px;
+        @extend %reusable_flexbox;
+        flex-direction: column;
+
+        .search_bar {
+            width: 70vh;
+            height: 4vh;
+            border-radius: 10px;
+            font-size: 18px
+        }
+    }
+
+    .button_section {
+        // border: solid 10px red;
+        @extend %reusable_flexbox;
+        flex-direction: row;
+        margin: 10px;
+
+        input {
+            @extend %button_layout;
+        }
+    }
+}
+
+
+// SCSS FOR ADVANCED SEARCH
+
+%padding {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top_section {
+    @extend %padding;
+    display: flex;
+    box-sizing: border-box;
+
+    #google_logo_2 {
+        // border: solid red 10px;
+        width: 50%;
+
+        p {
+            font-size: 25px;
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+
+    #links_section {
+        // border: solid red 10px;
+        width: 50%;
+    }
+}
+
+#header_section {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    width: 100%;
+    // border: solid red 1px;
+    @extend %padding;
+
+    #left_header_section {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+
+        #advanced_header_1 {
+            font-weight: bold;
+            font-size: 20px;
+            color: lightcoral;
+            margin: 10px;
+        }
+    
+        #advanced_header_2 {
+            font-size: 18px;
+            margin: 10px;
+        }
+    }
+
+    #right_header_section {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 45%;
+    }
+    
+}
+
+.advanced_search_section {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    @extend %padding;
+
+    %content_divs {
+        // border: solid red 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: left;
+        padding: 0px;
+        margin: 0;
+    }
+
+    #left_section {
+        @extend %content_divs;
+        width: 15%;
+        padding: 0;
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+
+            text-align: left;
+
+            border: solid 2px transparent;
+            height: 20px;
+            padding: 0px;
+            margin: 10px;
+        }
+    }
+
+    .search_form {
+        @extend %content_divs;
+        width: 40%;
+        // background-color: red;    
+
+        .search_bar {
+            height: 20px;
+            padding: 0px;
+            margin: 10px;
+        }
+
+        .button_section {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 30px;
+            margin: 10px;
+            
+            input {
+                background-color: cornflowerblue;
+                border-color: transparent;
+                border-radius: 4px;
+                color: white;
+                font-size: 12px;
+            }
+        }
+
+    }
+
+    #right_section {
+        @extend %content_divs;
+        width: 45%;
+
+        p {
+            border: solid 2px transparent;
+            color: gray;
+            font-size: 14px;
+            height: 20px;
+            margin: 10px;
+        }
+    }
+
+    #advanced_header {
+        color: red;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+    

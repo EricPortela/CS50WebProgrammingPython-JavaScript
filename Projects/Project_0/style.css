@@ -1,0 +1,130 @@
+.search_section, .search_section .search_form, .search_section .button_section {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#links_section {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 10px; }
+  #links_section a {
+    margin: 10px; }
+
+.search_section .button_section input {
+  height: 30px;
+  margin: 10px;
+  border-color: transparent;
+  border-radius: 4px; }
+
+.search_section {
+  flex-direction: column;
+  height: 60vh; }
+  .search_section #google_logo_1 {
+    font-size: 80px;
+    margin: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  .search_section .search_form {
+    flex-direction: column; }
+    .search_section .search_form .search_bar {
+      width: 70vh;
+      height: 4vh;
+      border-radius: 10px;
+      font-size: 18px; }
+  .search_section .button_section {
+    flex-direction: row;
+    margin: 10px; }
+
+.top_section, #header_section, .advanced_search_section {
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.top_section {
+  display: flex;
+  box-sizing: border-box; }
+  .top_section #google_logo_2 {
+    width: 50%; }
+    .top_section #google_logo_2 p {
+      font-size: 25px;
+      padding: 0px;
+      margin: 0px; }
+  .top_section #links_section {
+    width: 50%; }
+
+#header_section {
+  display: flex;
+  float: left;
+  box-sizing: border-box;
+  width: 100%; }
+  #header_section #left_header_section {
+    display: flex;
+    flex-direction: column;
+    width: 55%; }
+    #header_section #left_header_section #advanced_header_1 {
+      font-weight: bold;
+      font-size: 20px;
+      color: lightcoral;
+      margin: 10px; }
+    #header_section #left_header_section #advanced_header_2 {
+      font-size: 18px;
+      margin: 10px; }
+  #header_section #right_header_section {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 45%; }
+
+.advanced_search_section {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: 100%;
+  float: left; }
+  .advanced_search_section #left_section, .advanced_search_section .search_form, .advanced_search_section #right_section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 0px;
+    margin: 0; }
+  .advanced_search_section #left_section {
+    width: 15%;
+    padding: 0; }
+    .advanced_search_section #left_section p {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      text-align: left;
+      border: solid 2px transparent;
+      height: 20px;
+      padding: 0px;
+      margin: 10px; }
+  .advanced_search_section .search_form {
+    width: 40%; }
+    .advanced_search_section .search_form .search_bar {
+      height: 20px;
+      padding: 0px;
+      margin: 10px; }
+    .advanced_search_section .search_form .button_section {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 30px;
+      margin: 10px; }
+      .advanced_search_section .search_form .button_section input {
+        background-color: cornflowerblue;
+        border-color: transparent;
+        border-radius: 4px;
+        color: white;
+        font-size: 12px; }
+  .advanced_search_section #right_section {
+    width: 45%; }
+    .advanced_search_section #right_section p {
+      border: solid 2px transparent;
+      color: gray;
+      font-size: 14px;
+      height: 20px;
+      margin: 10px; }
+  .advanced_search_section #advanced_header {
+    color: red;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
